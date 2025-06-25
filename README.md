@@ -24,8 +24,8 @@ The game includes three themed categories:
 
 Each category contains **3 difficulty levels**:
 - **Easy:** 12 cards (6 pairs)
-- **Medium:** 20 cards (10 pairs)
-- **Hard:** 30 cards (15 pairs)
+- **Medium:** 18 cards (9 pairs)
+- **Hard:** 24 cards (12 pairs)
 
 ---
 
@@ -34,7 +34,7 @@ Each category contains **3 difficulty levels**:
 - ✨ Bright, kid-friendly visuals and audio
 - 🧩 Randomized cards for replay value
 - 🔊 Audio pronunciation of items
-- ✅ Positive feedback on correct matches (sounds + animations)
+- ✅ Positive feedback on correct matches (sounds)
 - ❌ No "Game Over" — no penalties or stress
 
 ---
@@ -45,10 +45,9 @@ Each category contains **3 difficulty levels**:
 2. **Category Selection:** Choose between animals, fruits, or vegetables
 3. **Level Selection:** Easy / Medium / Hard
 4. **Gameplay:** 
-   - Cards appear face-up for 5 seconds
    - Players flip and match cards
    - Audio and visual feedback for every interaction
-5. **Completion Screen:** Motivational message + replay/exit options
+5. **Completion Screen:** Motivational message with animation + replay/exit and back options
 
 ---
 
