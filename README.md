@@ -35,13 +35,15 @@ Each category contains **3 difficulty levels**:
 - 🧩 Randomized cards for replay value
 - 🔊 Audio pronunciation of items
 - ✅ Positive feedback on correct matches (sounds)
+- 🎵 Background music with adjustable volume, creating a fun yet calming atmosphere
+- 🆘 Help button that plays spoken instructions instead of text—perfect for early readers
 - ❌ No "Game Over" — no penalties or stress
 
 ---
 
 ## 🕹️ Game Flow
 
-1. **Start Screen:** Play / Help / Quit options
+1. **Start Screen:** Play / Options / Quit
 2. **Category Selection:** Choose between animals, fruits, or vegetables
 3. **Level Selection:** Easy / Medium / Hard
 4. **Gameplay:** 
