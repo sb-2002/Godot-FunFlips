@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dmrpl22xucy32"]
+
+[node name="CompletionScreen" type="Node2D"]

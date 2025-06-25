@@ -1,0 +1,409 @@
+[gd_scene load_steps=31 format=3 uid="uid://dl8v4skgj4thn"]
+
+[ext_resource type="Script" uid="uid://dm5md7dbs1uqo" path="res://scripts/StartScreen.gd" id="1_4vrcr"]
+[ext_resource type="Texture2D" uid="uid://cmt716f8y0kph" path="res://images/main_menu_background.png" id="2_pswtb"]
+[ext_resource type="Script" uid="uid://br6eph0pqm5pu" path="res://scripts/audio_control.gd" id="3_a0vbq"]
+[ext_resource type="Texture2D" uid="uid://cke7s6ikaxba" path="res://images/mute.png" id="4_nj7f0"]
+[ext_resource type="Texture2D" uid="uid://ca0ak6givd228" path="res://images/unmute.png" id="5_2dvb4"]
+[ext_resource type="AudioStream" uid="uid://4cnsfpq0d3nt" path="res://assets/sounds/help_instructions.mp3" id="6_gn4gw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pswtb"]
+texture = ExtResource("2_pswtb")
+modulate_color = Color(0.737193, 0.737193, 0.737193, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pswtb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2dvb4"]
+bg_color = Color(0.821789, 0.821789, 0.821789, 0.988235)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.270588)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gn4gw"]
+bg_color = Color(0.621524, 0.621524, 0.621524, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.270588)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pswtb"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.270588)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a0vbq"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nj7f0"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_424ft"]
+bg_color = Color(0.899759, 0.904018, 0.911056, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.2)
+shadow_size = 5
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a0vbq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0y1d7"]
+bg_color = Color(0.783523, 0.783523, 0.783523, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q32f0"]
+bg_color = Color(0.61339, 0.61339, 0.61339, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jevws"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(0, 3.41)
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_pswtb"]
+color = Color(1, 1, 1, 1)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_a0vbq"]
+color = Color(0.057, 0.473733, 0.95, 0.956863)
+thickness = 6
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_nj7f0"]
+color = Color(0.4233, 0.83, 0.83, 0.956863)
+thickness = 6
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2dvb4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l8krj"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 55
+corner_radius_top_right = 55
+corner_radius_bottom_right = 55
+corner_radius_bottom_left = 55
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(3.41, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qxr5m"]
+bg_color = Color(0.82606, 0.82606, 0.82606, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.293333, 0.2, 1)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(3.41, 3.41)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ltf8"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 55
+corner_radius_top_right = 55
+corner_radius_bottom_right = 55
+corner_radius_bottom_left = 55
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(3.41, 3.41)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gn4gw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kythq"]
+bg_color = Color(0.894922, 0.894922, 0.894922, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dhbmj"]
+bg_color = Color(0.894922, 0.894922, 0.894922, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_828hl"]
+bg_color = Color(0.955001, 0.882783, 0.802103, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.8, 0.152, 0.152, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(4, 4)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_61mks"]
+bg_color = Color(0.894922, 0.894922, 0.894922, 1)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+shadow_color = Color(0, 0, 0, 0.203922)
+shadow_size = 5
+shadow_offset = Vector2(4, 4)
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4vrcr")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_pswtb")
+
+[node name="MainButtons" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = 53.5
+offset_right = 160.0
+offset_bottom = 294.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 12
+
+[node name="PlayButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pswtb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2dvb4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gn4gw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_pswtb")
+text = "Spielen"
+
+[node name="OptionButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pswtb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2dvb4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gn4gw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_a0vbq")
+text = "Optionen"
+
+[node name="QuitButton" type="Button" parent="MainButtons"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pswtb")
+theme_override_styles/hover = SubResource("StyleBoxFlat_2dvb4")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_gn4gw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_nj7f0")
+text = "Beenden"
+
+[node name="Options" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -207.0
+offset_top = -372.0
+offset_right = 207.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_424ft")
+
+[node name="Label" type="Label" parent="Options"]
+layout_mode = 0
+offset_right = 412.0
+offset_bottom = 56.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Optionen"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Back" type="Button" parent="Options"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -109.0
+offset_top = -59.0
+offset_right = 109.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_a0vbq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0y1d7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q32f0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jevws")
+text = "Zurück"
+
+[node name="AudioControl" type="HSlider" parent="Options"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.0
+offset_top = 60.0
+offset_right = 171.0
+offset_bottom = 82.0
+grow_horizontal = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_pswtb")
+theme_override_styles/grabber_area = SubResource("StyleBoxLine_a0vbq")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_nj7f0")
+max_value = 1.0
+step = 0.05
+value = 0.3
+script = ExtResource("3_a0vbq")
+audio_bus_name = "BackgroundMusic"
+
+[node name="Mute" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 90.0
+offset_top = 107.0
+offset_right = 161.0
+offset_bottom = 178.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_2dvb4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l8krj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_qxr5m")
+theme_override_styles/normal = SubResource("StyleBoxFlat_8ltf8")
+icon = ExtResource("4_nj7f0")
+icon_alignment = 1
+expand_icon = true
+
+[node name="UnMute" type="Button" parent="Options"]
+layout_mode = 0
+offset_left = 242.0
+offset_top = 107.0
+offset_right = 310.0
+offset_bottom = 176.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gn4gw")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_kythq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dhbmj")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_828hl")
+theme_override_styles/normal = SubResource("StyleBoxFlat_61mks")
+icon = ExtResource("5_2dvb4")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Help" type="Button" parent="Options"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -109.0
+offset_top = -124.0
+offset_right = 109.0
+offset_bottom = -74.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_a0vbq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0y1d7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q32f0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_jevws")
+text = "Hilfe"
+
+[node name="HelpAudioPlayer" type="AudioStreamPlayer" parent="Options"]
+stream = ExtResource("6_gn4gw")
+
+[connection signal="pressed" from="Options/Back" to="." method="_on_back_option_pressed"]
+[connection signal="value_changed" from="Options/AudioControl" to="Options/AudioControl" method="_on_value_changed"]
+[connection signal="pressed" from="Options/Mute" to="." method="_on_mute_pressed"]
+[connection signal="pressed" from="Options/UnMute" to="." method="_on_un_mute_pressed"]
+[connection signal="pressed" from="Options/Help" to="." method="_on_help_pressed"]
