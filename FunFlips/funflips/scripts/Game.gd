@@ -45,6 +45,7 @@ var flipped_cards = []
 var category = ""
 var level = ""
 var move_count = 0
+var score_count = 0
 
 # Optional: keep a reference to the main manager if you want to go back to menu, etc.
 var manager = null
@@ -96,6 +97,7 @@ func _ready():
 	
 func start_game():
 	move_count = 0;
+	score_count = 0;
 	update_move_label()
 	print("Starting game with card_data: ", card_data)
 	# Duplicate and shuffle card data (make pairs)
@@ -155,6 +157,8 @@ func check_match():
 		# Matched! Disable the cards so they can't be clicked again
 		card1.disabled = true
 		card2.disabled = true
+		score_count += 10
+		update_score_label()
 		# Optionally: Play a sound or show a match animation here
 		if card1.has_node("MatchSound"):
 			card1.get_node("MatchSound").play()
@@ -205,6 +209,10 @@ func _on_BackToMenuButton_pressed() -> void:
 		
 func update_move_label():
 	$MoveLabel.text = "Moves: %d" % move_count
+	
+func update_score_label():
+	$ScoreLabel.text = "Punkte: %d" % score_count
+	
 	
 
 func _on_BackButton_pressed() -> void:

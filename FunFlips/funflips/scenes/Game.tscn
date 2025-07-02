@@ -375,6 +375,23 @@ libraries = {
 &"": SubResource("AnimationLibrary_g4kob")
 }
 
+[node name="ScoreLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -214.0
+offset_top = -81.0
+offset_right = -2.0
+offset_bottom = -17.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Punkte: 0"
+
 [connection signal="pressed" from="PlayAgainButton" to="." method="_on_playAgainButton_pressed"]
 [connection signal="pressed" from="BackToMenuButton" to="." method="_on_BackToMenuButton_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
