@@ -98,7 +98,7 @@ Developed by a team of four ("The Everest") as a group project for the second se
 ## ✍️ Contributors
 
 - sb-2002
-- [Add the names or GitHub handles of your teammates here]
+- and other 3 teammates...
 
 ---
 
