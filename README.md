@@ -1,78 +1,111 @@
 # 🎮 FunFlips: A Memory-Based Learning Game for Kids (Ages 4–6)
 
-Welcome to **FunFlips** — a fun, educational 2D game developed using the Godot engine. This project is part of a college project focused on early childhood education and software development collaboration.
+Welcome to **FunFlips** — a fun, educational 2D game developed using the Godot engine. This group project was created in our 2nd semester as part of our foundation of software engineering course. The aim is to foster early childhood learning through play, teamwork, and hands-on software development.
 
 ---
 
 ## 🧠 Game Concept
 
-**FunFlips** is a memory card game that helps children aged 4–6 improve:
+**FunFlips** is a memory card game designed to help children aged 4–6 improve their:
 - **Memory**
 - **Concentration**
 - **Vocabulary**
 
-Players flip cards to find matching pairs while hearing the correct pronunciation of each item — combining **visual** and **audio** learning.
+Players flip cards to find matching pairs. Each match is paired with audio pronunciation, blending **visual** and **audio** learning for maximum engagement.
 
 ---
 
 ## 🎯 Learning Categories
 
-The game includes three themed categories:
+Three themed categories are available:
 - 🐾 **Animals**
 - 🍎 **Fruits**
 - 🥦 **Vegetables**
 
-Each category contains **3 difficulty levels**:
+Each category offers three levels of difficulty:
 - **Easy:** 12 cards (6 pairs)
 - **Medium:** 18 cards (9 pairs)
 - **Hard:** 24 cards (12 pairs)
 
 ---
 
-## 🎮 Game Features
+## ✨ Game Features
 
-- ✨ Bright, kid-friendly visuals and audio
-- 🧩 Randomized cards for replay value
-- 🔊 Audio pronunciation of items
-- ✅ Positive feedback on correct matches (sounds)
-- 🎵 Background music with adjustable volume, creating a fun yet calming atmosphere
-- 🆘 Help button that plays spoken instructions instead of text—perfect for early readers
-- ❌ No "Game Over" — no penalties or stress
+- Bright, child-friendly visuals and engaging background music
+- Randomized card layouts for replayability
+- Audio pronunciation for vocabulary development
+- Positive audio and visual feedback on correct matches
+- No penalties or "game over" — a stress-free experience
+- Help button provides spoken instructions (no reading required)
+- Adjustable music and sound volume
 
 ---
 
 ## 🕹️ Game Flow
 
 1. **Start Screen:** Play / Options / Quit
-2. **Category Selection:** Choose between animals, fruits, or vegetables
+2. **Category Selection:** Animals, Fruits, or Vegetables
 3. **Level Selection:** Easy / Medium / Hard
 4. **Gameplay:** 
-   - Players flip and match cards
-   - Audio and visual feedback for every interaction
-5. **Completion Screen:** Motivational message with animation + replay/exit and back options
+    - Flip and match cards
+    - Receive instant audio/visual feedback
+5. **Completion:** Motivational message with animation and options to replay, exit, or return to menu
 
 ---
 
 ## 🛠️ Development Plan
 
-- **Prototype:** Build a working card-matching demo
-- **Design:** Add colorful illustrations and voiceovers
-- **Test:** Observe gameplay with children for UX improvements
-- **Launch:** Deploy to app stores or web
-- **Future Plans:** Add more categories (e.g., shapes, colors)
+- **Prototype:** Create a playable card-matching demo
+- **Design:** Integrate colorful assets and voiceovers
+- **Testing:** Observe child playtests for improvements
+- **Launch:** Plan for deployment to app stores or web
+- **Future:** Potential new categories (shapes, colors, etc.)
 
 ---
 
-## 👨‍💻 Team Collaboration
+## 👨‍💻 Team & Collaboration
 
-This project is collaboratively developed by the team "The Everest" as a group project for the foundation of software engineering using:
-- **Godot Game Engine**
-- **GitLab** for version control and team coordination
+Developed by a team of four ("The Everest") as a group project for the second semester software engineering course.
+- **Game Engine:** Godot (GDScript)
+- **Version Control:** GitLab (main dev), GitHub (public/demo)
 
 ---
 
 ## 📦 How to Run
 
-1. Clone this repository:
+1. **Clone this repository:**
    ```bash
-   git clone https://lv-gitlab.intern.th-ab.de/swe/sose2025/swe-project-sdi-theeverest.git
+   git clone https://github.com/sb-2002/Godot-FunFlips.git
+   ```
+2. **Open with Godot:**
+   - Download and install [Godot Engine](https://godotengine.org/)
+   - Use the Godot project manager to open the cloned folder
+3. **Run the main scene** to start playing!
+
+---
+
+## 📁 Repository Structure
+
+```
+/assets      - Game graphics, audio, and music
+/scripts     - GDScript files for game logic
+/docs        - Project documentation (design docs, reports)
+/README.md   - This file
+```
+
+---
+
+## ✍️ Contributors
+
+- sb-2002
+- [Add the names or GitHub handles of your teammates here]
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+> **FunFlips — Making learning a joyful adventure for every child!**
